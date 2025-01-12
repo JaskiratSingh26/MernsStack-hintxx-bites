@@ -7,6 +7,9 @@ app.use(express.json())
 app.use(cross())
 
 // for login and resgiter user
+app.get('/',(req,res)=>{
+    res.send('helo')
+})
 
 app.use('/api', require('./apiroutes/Registeruser'))
 app.use('/api', require('./apiroutes/Loginuser'))
